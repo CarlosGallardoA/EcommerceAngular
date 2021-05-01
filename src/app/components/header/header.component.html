@@ -1,0 +1,29 @@
+<nav>
+  <div id="logo">
+    <ul>
+      <li>Logo</li>
+      <li>SigIn</li>
+    </ul>
+  </div>
+  <div id="menu">
+    <a [routerLink]="['/']" routerLinkActive="router-link-active">
+      <button mat-button>
+        <mat-icon aria-hidden="false" aria-label="Example home icon"
+          >home</mat-icon
+        >
+        <span class="inicio"> Inicio </span>
+      </button>
+    </a>
+    <a [routerLink]="['/categorias']" routerLinkActive="router-link-active">
+      <button mat-button>Categorias</button></a
+    >
+    <mat-menu #belowMenu="matMenu" yPosition="below">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+
+    <button mat-button>Outlet</button>
+
+    <button mat-button>Contacto</button>
+  </div>
+</nav>

@@ -1,0 +1,29 @@
+nav{
+  margin-bottom: 30px;
+}
+#menu{
+  width: 100%;
+  background-color: azure;
+  height: 20px;
+}
+#logo{
+  width: 100%;
+  height: 30px;
+}
+span .inicio{
+  padding: 10px;
+}
+#logo ul{
+  list-style-type: none;
+  display: flex;
+  justify-content:space-around;
+}
+button{
+  border: none;
+  background-color: azure;
+  padding: 10px;
+  font-size: 14px;
+}
+button:hover{
+  background-color: cadetblue;
+}

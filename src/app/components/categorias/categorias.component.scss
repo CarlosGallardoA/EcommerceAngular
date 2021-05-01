@@ -1,0 +1,17 @@
+ul#productos{
+  list-style-type: none;
+  display: flex;
+  direction: row;
+  justify-content: space-around;
+}
+.precio{
+  color: red;
+  font-weight: bold;
+}
+img{
+  width: 300px;
+}
+ul#productos li a{
+  text-decoration: none;
+  color: black;
+}

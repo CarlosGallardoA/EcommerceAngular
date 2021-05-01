@@ -1,0 +1,15 @@
+<ul id="productos">
+  <li *ngFor="let item of Lista">
+    <a [routerLink]="['/productos']" routerLinkActive="router-link-active">
+      <p>
+        {{ item.nombre }}
+      </p>
+      <img src="/assets/{{ item.imagen }}" alt="" />
+      <p class="precio">{{ item.precio }}</p>
+      <span *ngIf="item.cantidad == 0">Producto no disponible</span>
+    </a>
+    <button *ngIf="item.cantidad > 0">Comprar</button>
+    <hr />
+    <ngb-rating [(rate)]="item.puntuacion"></ngb-rating>
+  </li>
+</ul>

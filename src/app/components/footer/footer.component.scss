@@ -1,0 +1,14 @@
+footer{
+  background-color: black;
+  color: white;
+}
+footer ul{
+  list-style-type: none;
+  display: flex;
+}
+footer ul li{
+  padding: 10px;
+}
+footer ul li>ul{
+  display: block;
+}
